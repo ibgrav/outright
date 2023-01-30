@@ -1,0 +1,17 @@
+{
+  "name": "outright",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:node": "tsc-watch --onSuccess \"node dist/adapters/node/adapter-node.js\"",
+    "dev:deno": "deno run --watch --allow-net src/adapters/deno/adapter-deno.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "prettier": "^2.8.3",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4",
+    "undici": "5.16.0"
+  }
+}
